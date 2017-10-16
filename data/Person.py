@@ -15,3 +15,6 @@ class Person(DBItem):
     def do_store(self):
         self.cursor.execute("insert into person (name, born, died) values (?, ?, ? )",
                             (self.name, self.born, self.died))
+
+    def __str__(self):
+        return f"{self.name} ({self.born if self.born else '?'} - {self.died  if self.died else '?'})"
