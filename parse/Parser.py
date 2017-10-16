@@ -31,7 +31,7 @@ class Parser:
                     if years_reg.lastindex >= 2:
                         died = years_reg.group(2)
 
-                clean_name = re.sub(RegexStore.clean_name, '', person.strip())
+                clean_name = re.sub(RegexStore.clean_name, '', person).strip()
                 if not clean_name:
                     continue
                 callback(clean_name, born, died)

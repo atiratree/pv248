@@ -2,8 +2,8 @@ from data.DBItem import DBItem
 
 
 class ScoreAuthor(DBItem):
-    def __init__(self, conn, score=None, composer=None, score_id=None, composer_id=None):
-        super().__init__(conn)
+    def __init__(self, conn, id=None, score=None, composer=None, score_id=None, composer_id=None):
+        super().__init__(conn, id)
         self.score_id = score.id if score else score_id
         self.composer_id = composer.id if composer else composer_id
 

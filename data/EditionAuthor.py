@@ -2,8 +2,8 @@ from data.DBItem import DBItem
 
 
 class EditionAuthor(DBItem):
-    def __init__(self, conn, edition=None, editor=None, edition_id=None, editor_id=None):
-        super().__init__(conn)
+    def __init__(self, conn, id=None, edition=None, editor=None, edition_id=None, editor_id=None):
+        super().__init__(conn, id)
         self.edition_id = edition.id if edition else edition_id
         self.editor_id = editor.id if editor else editor_id
 

@@ -21,13 +21,13 @@ class Block:
         self.voices = []
 
     def add_composer(self, name, born, died):
-        self.composers.append(Person(self.conn, name, born, died))
+        self.composers.append(Person(self.conn, name=name, born=born, died=died))
 
     def add_editor(self, name, born, died):
-        self.editors.append(Person(self.conn, name, born, died))
+        self.editors.append(Person(self.conn, name=name, born=born, died=died))
 
     def add_voice(self, score, name, number):
-        self.voices.append(Voice(self.conn, score, number=number, name=name))
+        self.voices.append(Voice(self.conn, score=score, number=number, name=name))
 
     def clear(self):
         self.score = Score(self.conn)
@@ -45,7 +45,7 @@ class Block:
 
         for composer in self.composers:
             composer.store()
-            ScoreAuthor(conn, score, composer).store()
+            ScoreAuthor(conn, score=score, composer=composer).store()
 
         for voice in self.voices:
             voice.score_id = score.id
@@ -56,7 +56,7 @@ class Block:
 
         for editor in self.editors:
             editor.store()
-            EditionAuthor(conn, self.edition, editor).store()
+            EditionAuthor(conn, edition=self.edition, editor=editor).store()
 
         self.partiture.edition_id = self.edition.id
         self.partiture.store()
