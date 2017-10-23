@@ -1,7 +1,7 @@
 from db_engine.db_engine import DbEngine
-from metadata.Settings import Settings
-from util.Utils import Utils
-from parse.ArgParser import ArgParser
+from metadata.settings import Settings
+from util.utils import Utils
+from parse.arg_parser import ArgParser
 import sqlite3
 
 if __name__ == "__main__":

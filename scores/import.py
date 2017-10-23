@@ -1,9 +1,9 @@
 import sqlite3
 import os
 
-from metadata.Block import Block
-from parse.Parser import Parser
-from metadata.Settings import Settings
+from metadata.block import Block
+from parse.parser import Parser
+from metadata.settings import Settings
 
 if __name__ == "__main__":
     if os.path.isfile(Settings.db_file):

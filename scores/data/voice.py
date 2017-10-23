@@ -1,4 +1,4 @@
-from data.DBItem import DBItem
+from data.db_item import DBItem
 
 
 class Voice(DBItem):

@@ -1,8 +1,8 @@
 from functools import reduce
 
-from data.Person import Person
-from data.Score import Score
-from util.Utils import Utils
+from data.person import Person
+from data.score import Score
+from util.utils import Utils
 
 
 class Composer(Person):

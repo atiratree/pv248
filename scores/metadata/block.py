@@ -1,10 +1,10 @@
-from data.Edition import Edition
-from data.EditionAuthor import EditionAuthor
-from data.Person import Person
-from data.Print import Print
-from data.Score import Score
-from data.ScoreAuthor import ScoreAuthor
-from data.Voice import Voice
+from data.edition import Edition
+from data.edition_author import EditionAuthor
+from data.person import Person
+from data.print_cls import Print
+from data.score import Score
+from data.score_author import ScoreAuthor
+from data.voice import Voice
 
 
 class Block:

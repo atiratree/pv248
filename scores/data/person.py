@@ -1,5 +1,5 @@
-from data.DBItem import DBItem
-from util.Utils import readable
+from data.db_item import DBItem
+from util.utils import readable
 
 
 class Person(DBItem):

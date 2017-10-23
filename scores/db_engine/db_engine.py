@@ -1,10 +1,10 @@
 import sqlite3
 import sys
 
-from data.Composer import Composer
-from data.Person import Person
-from data.Print import Print
-from data.Score import Score
+from data.composer import Composer
+from data.person import Person
+from data.print_cls import Print
+from data.score import Score
 
 
 class DbEngine:
