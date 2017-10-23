@@ -1,6 +1,6 @@
 import json
-from metadata.Keys import Keys as K
-from utils.Utils import get_random_color
+from metadata.keys import Keys as K
+from utils.utils import get_random_color
 
 
 class Parser:
