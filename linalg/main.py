@@ -1,6 +1,7 @@
 import numpy
-from utils import generate_alphabet_variables
-from printer import print_equations, print_solution, print_named
+
+from utils.utils import generate_alphabet_variables
+from utils.printer import print_equations, print_solution, print_named
 
 
 def check_args(rows, cols, right_side_rows):
